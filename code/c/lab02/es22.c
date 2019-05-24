@@ -20,7 +20,7 @@ int main(int argc, char **argv) {
     }
 
     /* father */
-    zprintf(1, "[%d] Hello, I'm the father! [fork()=%d]\n", getpid(), getpid(), pid);
+    zprintf(1, "[%d] Hello, I'm the father! [fork()=%d]\n", getpid(), pid);
     wait_child();
     exit(EXIT_SUCCESS);
 }

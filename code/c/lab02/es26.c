@@ -11,7 +11,7 @@
 void child(int index, int argc, char **argv) {
     zprintf(1, "[%d] Child %d started...\n", getpid(), index);
     zprintf(1, "[%d] executing %s...\n", getpid(), argv[1]);
-    execlp(argv[1], argv[1], (char *)0, (char *)0); 
+    execlp(argv[1], argv[1], (char *)0); 
     zprintf(2, "error: exec()\n");
     exit(EXIT_FAILURE);
 }
